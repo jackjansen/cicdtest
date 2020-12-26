@@ -1,0 +1,10 @@
+name: build-arduino
+on: push
+jobs:
+  build-arduino-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Arduino build
+      uses: ArminJo/arduino-test-compile@v3
