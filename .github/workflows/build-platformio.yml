@@ -27,7 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade platformio
     - name: Run PlatformIO
-      run: pio run -e uno
+      run: pio run -e uno -e nodemcuv2 -e esp32thing
 #    - name: Checkout code
 #      uses: actions/checkout@v2
 #    - name: Arduino build
